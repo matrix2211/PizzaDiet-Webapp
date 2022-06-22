@@ -1,0 +1,42 @@
+{
+  "name": "PizzaDiet",
+  "version": "1.0.0",
+  "description": "PizzaDiet WebApp",
+  "main": "index.js",
+  "author": "matrix",
+  "scripts": {
+    "server": "node server.js",
+    "dev": "nodemon server.js",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@stripe/stripe-js": "^1.29.0",
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "connect-mongo": "^4.6.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
+    "moment": "^2.29.3",
+    "mongoose": "^6.3.3",
+    "noty": "^3.2.0-beta-deprecated",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.5.0",
+    "stripe": "^9.2.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.43",
+    "nodemon": "^2.0.16",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.51.0",
+    "sass-loader": "^12.1.0"
+  }
+}
