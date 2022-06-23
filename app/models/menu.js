@@ -2,10 +2,14 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const menuSchema = new Schema({
-    name: { type: String, required:true},
-    image: { type: String, required:true},
-    price: { type: Number, required:true},
-    size: { type: String, required:true}
+    category: { type: String, default: "none", enum: ["Simply Veg.", "Classic Veg.", "Deluxe Veg.", "Jain Special", "Supreme Veg.", "Mini Pizza", "Starters", "Pasta", "none"]},
+    name: { type: String, required: true },
+    image: { type: String, required: true, default: 'pizza.png' },
+    size: {
+        small: { type: Number },
+        medium: { type: Number },
+        large: { type: Number }
+    },
 })
 
 module.exports = mongoose.model('menus', menuSchema)
