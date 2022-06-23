@@ -7,39 +7,57 @@
             <button class="px-6 py-2 rounded-full text-white font-bold mt-4 btn-primary">Order Now</button>
         </div>
         <div class="w-1/2">
-            <img src="/img/hero-pizza.png" alt="">
+            <img src="/img/hero-pizza2.png" alt="">
         </div>
     </div>
 </section>
+<% categories = ["Simply Veg.", "Classic Veg.", "Deluxe Veg.", "Jain Special", "Supreme Veg.", "Mini Pizza", "Starters", "Pasta"]
+categories.forEach((catg) => {
+
+%>
 <section class="menu container mx-auto py-8">
-    <h1 class="text-xl font-bold mb-8">All Pizzas</h1>
+   
+    <h1 class="text-xl font-bold mb-8"><%= catg %></h1>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 col-gap-12 row-gap-16">
-        <% pizzas.forEach(function(pizza) { %>
+        <% pizzas.forEach(function(pizza) { if(pizza.category == catg) {%>
             <div class="w-full w-64">
                 <img class="h-40 mb-4 mx-auto" src="/img/<%= pizza.image %>" alt="">
                 <div class="text-center">
                     <h2 class="mb-4 text-lg font-bold">
                         <%= pizza.name %>
                     </h2>
-                    <!-- <span class="size py-1 px-4 rounded-full uppercase text-xs"><%= pizza.size %></span> -->
-                    <label for="pet-select">Size:</label>
+                    <table class="pricetable w-3/5 table-auto bg-white items-center">
 
-                    <select name="size" id="pizza-size">
-                        <option value="">SMALL</option>
-                        <option value="">MEDIUM</option>
-                        <option value="">LARGE</option>
-                    </select>
+                        <thead>
 
-                    <div class="flex items-center justify-around mt-6">
-                        <span class="font-bold text-lg">$<%= pizza.price %></span>
-                        <button data-pizza="<%= JSON.stringify(pizza) %>"
-                            class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
-                            <span>+</span>
-                            <span class="ml-4">Add</span>
-                        </button>
-                    </div>
+                            <tr>
+                                <% Object.keys(pizza.size).forEach(key=>{ %>
+
+                                    <th style="text-align:center" class="px-4 py-2 text-left text-sm">
+                                        <%= key.toUpperCase() %>
+                                    </th>
+                                    <% })%>
+
+                            </tr>
+
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <% Object.keys(pizza.size).forEach(key=>{ %>
+
+                                    <td style="text-align:center" class="border px-4 py-2 font-bold">
+                                        ₹<%= pizza.size[key] %>
+                                    </td>
+                                    <% })%>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+
                 </div>
             </div>
-            <% })%>
-
+            <% } })%>
 </section>
+<%})%>
