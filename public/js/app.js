@@ -2864,6 +2864,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 var addToCart = document.querySelectorAll('.add-to-cart');
+var popupPanel = document.querySelectorAll('.popup');
 var cartCounter = document.querySelector('#cartCounter');
 
 function updateCart(pizza) {
@@ -2890,6 +2891,9 @@ addToCart.forEach(function (btn) {
     var pizza = JSON.parse(btn.dataset.pizza);
     updateCart(pizza);
   });
+});
+popupPanel.forEach(function (btn) {
+  btn.addEventListener('click', function (e) {});
 }); // Remove alert message after X seconds
 
 var alertMsg = document.querySelector('#success-alert');

@@ -1,0 +1,5 @@
+{
+    "token" : "OTc3NDc1ODczNTYzMzQ0OTA2.GRCLnr.5T3zl54w39bpGwazhQF_Wkk-_3ZXGBec93K9Yw",
+    "prefix": "!",
+    "mongooseConnectionString" : "mongodb+srv://pizzadiet:pizzadiet@cluster0.37m0f.mongodb.net/pizza?retryWrites=true&w=majority"
+}

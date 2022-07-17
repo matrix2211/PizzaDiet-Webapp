@@ -1,65 +1,106 @@
-[{
-  "_id": {
-    "$oid": "5eee651f739f8c674fd736ee"
+[
+  {
+    "_id": {
+      "$oid": "5eee651f739f8c674fd736ee"
+    },
+    "category": "Simply Veg.",
+    "name": "Margherita",
+    "image": "pizza.png",
+    "size": {
+      "small": "100",
+      "medium": "150",
+      "large": "200"
+    }
   },
-  "name": "Margherita",
-  "image": "pizza.png",
-  "price": "100",
-  "size": "small"
-},{
-  "_id": {
-    "$oid": "5eee6671a27a66807cf2bea3"
+  {
+    "_id": {
+      "$oid": "5eee6671a27a66807cf2bea3"
+    },
+    "category": "Simply Veg.",
+    "name": "Onion",
+    "image": "pizza.png",
+    "size": {
+      "small": "100",
+      "medium": "150",
+      "large": "200"
+    }
   },
-  "name": "Onion",
-  "image": "pizza.png",
-  "price": "120",
-  "size": "medium"
-},{
-  "_id": {
-    "$oid": "5eee6692a27a66807cf2bea4"
+  {
+    "_id": {
+      "$oid": "5eee6692a27a66807cf2bea4"
+    },
+    "category": "Simply Veg.",
+    "name": "Tomato",
+    "image": "pizza.png",
+    "size": {
+      "small": "100",
+      "medium": "150",
+      "large": "200"
+    }
   },
-  "name": "Tomato",
-  "image": "pizza.png",
-  "price": "120",
-  "size": "small"
-},{
-  "_id": {
-    "$oid": "5eee66a5a27a66807cf2bea5"
+  {
+    "_id": {
+      "$oid": "5eee66a5a27a66807cf2bea5"
+    },
+    "category": "Simply Veg.",
+    "name": "Capsicum",
+    "image": "pizza.png",
+    "size": {
+      "small": "100",
+      "medium": "150",
+      "large": "200"
+    }
   },
-  "name": "Capsicum",
-  "image": "pizza.png",
-  "price": "120",
-  "size": "large"
-},{
-  "_id": {
-    "$oid": "5eee66c4a27a66807cf2bea6"
+  {
+    "_id": {
+      "$oid": "5eee66c4a27a66807cf2bea6"
+    },
+    "category": "Simply Veg.",
+    "name": "Golden Corn",
+    "image": "pizza.png",
+    "size": {
+      "small": "100",
+      "medium": "150",
+      "large": "200"
+    }
   },
-  "name": "Golden Corn",
-  "image": "pizza.png",
-  "price": "120",
-  "size": "medium"
-},{
-  "_id": {
-    "$oid": "5eee66cfa27a66807cf2bea7"
+  {
+    "_id": {
+      "$oid": "5eee66cfa27a66807cf2bea7"
+    },
+    "category": "Simply Veg.",
+    "name": "Makhni Paneer",
+    "image": "pizza.png",
+    "size": {
+      "small": "100",
+      "medium": "150",
+      "large": "200"
+    }
   },
-  "name": "Makhni Paneer",
-  "image": "pizza.png",
-  "price": "200",
-  "size": "small"
-},{
-  "_id": {
-    "$oid": "5eee66eea27a66807cf2bea8"
+  {
+    "_id": {
+      "$oid": "5eee66eea27a66807cf2bea8"
+    },
+    "category": "Simply Veg.",
+    "name": "Punjabi Paneer",
+    "image": "pizza.png",
+    "size": {
+      "small": "100",
+      "medium": "150",
+      "large": "200"
+    }
   },
-  "name": "Punjabi Paneer",
-  "image": "pizza.png",
-  "price": "200",
-  "size": "large"
-},{
-  "_id": {
-    "$oid": "5eee6717a27a66807cf2bea9"
-  },
-  "name": "Mexican Veg.",
-  "image": "pizza.png",
-  "price": "150",
-  "size": "medium"
-}]
+  {
+    "_id": {
+      "$oid": "5eee6717a27a66807cf2bea9"
+    },
+    "category": "Simply Veg.",
+    "name": "Mexican Veg.",
+    "image": "pizza.png",
+    "size": {
+      "small": "100",
+      "medium": "150",
+      "large": "200"
+    }
+  }
+]
